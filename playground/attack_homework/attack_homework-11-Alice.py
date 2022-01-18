@@ -113,6 +113,7 @@ class GeneticAttack:
         """
         output, scores = self.fitness(population, target_label)
         # --------------TODO--------------
+        print(scores)
         score_ranks = None  # Sort the scores from largeset to smallest
         best_index = None  # The index for the best scored candidate
         logits = None  # Exponentiate the scores after incorporating temperature
