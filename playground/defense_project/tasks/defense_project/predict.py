@@ -59,8 +59,9 @@ class Prediction():
         for image in images:
             if self.detect_attack(image):
                 predictions.append(-1)
-            prediction = self.predict(image)
-            predictions.append(prediction)
+            else:
+                prediction = self.predict(image)
+                predictions.append(prediction)
         predictions = torch.tensor(predictions).to(self.device)
         return predictions
 
