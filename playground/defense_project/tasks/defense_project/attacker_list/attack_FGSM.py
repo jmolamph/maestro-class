@@ -3,9 +3,7 @@ import numpy as np
 import torch
 from copy import deepcopy
 from torch.utils.data import DataLoader
-from Maestro.attacker_helper.attacker_request_helper import virtual_model
 from transformers.data.data_collator import default_data_collator
-from Maestro.evaluator.Evaluator import get_data
 import torch.nn.functional as F
 
 class Attack:
