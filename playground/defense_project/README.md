@@ -1,4 +1,10 @@
 ## Defence Project
+Important: Before you start to run the code, download the cifar10 dataset for training, validating and testing by the file download_cifar10.sh.
+Basically, you can use the commands: 
+```
+chmod +x download_cifar10.sh
+./download_cifar10.sh
+```
 Please revise the `tasks/defense_project/predict.py` and `tasks/defense_project/train.py` files to implement different defense methods.
 
 You can use the following commands to evaluate the result: `python defense_project-Evaluator.py`.
