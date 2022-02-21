@@ -51,9 +51,14 @@ class Prediction():
         perturbed_image = original_images.unsqueeze(0)
         return perturbed_image
 
+    def detect_attack(self, original_image):
+        return False
+
     def batch_predict(self, images):
         predictions = []
         for image in images:
+            if self.detect_attack(image):
+                predictions.append(-1)
             prediction = self.predict(image)
             predictions.append(prediction)
         predictions = torch.tensor(predictions).to(self.device)
