@@ -1,6 +1,7 @@
 ## Reminder
 
-As to the defence homework, refer to the readme.md on `playground/defense_homework/README.md`.
+- As to the defence homework, refer to the `playground/defense_homework/README.md`.
+- As to the defence project, refer to the `playground/defense_project/README.md`.
 
 
 # Maestro
